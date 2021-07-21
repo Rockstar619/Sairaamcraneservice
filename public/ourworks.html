@@ -1,0 +1,177 @@
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+    $(window).on('scroll',function(){
+        if($(window).scrollTop()){
+            $('nav').addClass('black');
+        }
+        else{
+            $('nav').removeClass('black');
+        }
+    })
+  /*menu button onclick function*/         $(document).ready(function(){
+            $('.menu h4').click(function(){
+                $("nav ul").toggleClass("active")
+        })
+        })
+    </script>
+    <script>
+      // Open the Modal
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      
+      // Close the Modal
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script>
+  </head>
+  <body>
+    
+  <nav>
+    <div class="logo">
+        <a href="index.html">
+        <img src="misc/logo.png" alt="logo" />
+        </a>
+        </div>
+        
+   <ul>
+    <div class="head">SAI RAAM CRANE SERVICE</div>
+      <!-- <li><a href="#About">About us</a></li> -->
+      <div class="dropdown">
+       <button class="dropbtn">About Us</button>
+       <div class="dropdown-content">
+         <a href="http://localhost:8080#About">About us</a>
+         <a href="http://localhost:8080#Director">Director profile</a>
+         </div>
+         </div>
+       <li><a href="http://localhost:8080#What">What we do</a></li>
+    
+      <li><a href="http://localhost:8080#Contact">Contact Us</a></li>
+     </ul>
+ </nav>
+
+ 
+ <section class="sec2"></section>
+ <section class="content">
+ 
+ </section>
+ <div class="row">
+  <div class="column">
+    <img src="misc/logo.png" style="width: 120%"; onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="misc/Sairam.jpeg"style="width: 120%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="misc/logo.png" style="width: 120%"onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="misc/Sairam.jpeg" style="width: 120%"onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="misc/logo.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="misc/Sairam.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="misc/logo.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="misc/Sairam.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="misc/logo.png" style="width: 100%" onclick="currentSlide(1)" alt="Nature">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="misc/Sairam.jpeg"style="width: 100%" onclick="currentSlide(2)" alt="Snow">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="misc/logo.png" style="width: 100%"onclick="currentSlide(3)" alt="Mountains">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="misc/Sairam.jpeg"style="width: 100%" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+ <!-- <div id="About">
+   <img src="Sairam.jpeg" alt="sairam"/>
+   About Us </div> -->
+ <!-- <div class="wat" id="What">
+   <img title="Title Tag Goes Here" src="Sairam.jpeg" alt="sairam"/>What we do
+   
+   </div> -->
+ <!-- <div class="workss" id="Works">
+   <img src="Sairam.jpeg" alt="sairam"/>
+   Our Works </div> -->
+ <!-- <div class="contacts" id="Contact">
+   <img src="Sairam.jpeg" alt="sairam"/>
+   Contact Us </div> -->
+</body>
+
+  
+<!-- <img src="Sairam.jpeg" alt="sairam"/> -->
