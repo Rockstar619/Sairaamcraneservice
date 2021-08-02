@@ -473,7 +473,7 @@ img.hover-shadow {
 
 @media (min-width: 720px) {
   .header {
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 150px 1fr;
     justify-content: center;
   }
   .header h1 {
