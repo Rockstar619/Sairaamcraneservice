@@ -1,87 +1,115 @@
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta
+    name="viewport"
+    content="width=device-width,initial-scale=1, user-scalable=no"
+  />
+  <link rel="stylesheet" href="css/index.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+  <link
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script type="text/javascript">
-  $(window).on('scroll',function(){
-      if($(window).scrollTop()){
-          $('nav').addClass('black');
+    $(window).on("scroll", function () {
+      if ($(window).scrollTop()) {
+        $("nav").addClass("black");
+      } else {
+        $("nav").removeClass("black");
       }
-      else{
-          $('nav').removeClass('black');
-      }
-  })
-/*menu button onclick function*/         $(document).ready(function(){
-          $('.menu h4').click(function(){
-              $("nav ul").toggleClass("active")
-      })
-      })
+    });
+    /*menu button onclick function*/ $(document).ready(function () {
+      $(".menu h4").click(function () {
+        $("nav ul").toggleClass("active");
+      });
+    });
   </script>
 </head>
 <body>
-  
-<nav> 
-  <!-- <input type="checkbox" id="check">
-  <label for="check" class="checkbtn">
-    <i class="fas fa-bars"></i>
-  </label> -->
-      <div class="logo">
-        <a href="index.html">
-      <img src="misc/logo.png" alt="logo" />
-        </a>
-      </div>
-      
+  <header>
+    <nav class="header">
+      <a class="logo" href="index.html">
+        <img src="misc/logo1.jpg" alt="logo" />
+      </a>
 
-   <ul>
-     <div class="head">SAI RAAM CRANE SERVICE</div>
-       <!-- <li><a href="#About">About us</a></li> -->
-       <div class="dropdown">
-        <button class="dropbtn">About Us</button>
-        <div class="dropdown-content">
-          <a href="#About">Company profile</a>
-          <a href="#Director">Director profile</a>
+      <h1 class="head">SAI RAAM CRANE SERVICE</h1>
+
+      <ul>
+        <!-- <li><a href="#About">About us</a></li> -->
+        <div class="dropdown">
+          <button class="dropbtn" >About Us</button>
+          <div class="dropdown-content">
+            <a href="#About">Company profile</a>
+            <a href="#Director">Director profile</a>
           </div>
-          </div>
-        <li><a href="#What">What we do</a></li>
-       <li><a href="https://sairaamcraneservice.herokuapp.com/ourworks">Our Works</a></li>
-       <li><a href="#Contact">Contact Us</a></li>
+        </div>
+        <li class="borderlist"><a href="#What">What we do</a></li>
+        <li class="borderlist">
+          <a href="https://sairaamcraneservice.herokuapp.com/ourworks"
+            >Our Works</a
+          >
+        </li>
+        <li class="borderlist"><a href="#Contact">Contact Us</a></li>
       </ul>
-      
-  </nav>
+    </nav>
+  </header>
   <!-- <div id="backgroundimage"></div> -->
 
-  
   <section class="sec1">
-    <img src="misc/sairaam.jpg" alt="sairam"style=" width: 100% ;
-  max-width: 100% 
-  height: auto ;">
+    <img
+      src="misc/sairaam.jpg"
+      alt="sairam"
+      style=" width: 100% ; max-width: 100% ;height: auto ;"
+    />
   </section>
-  <section class="content">
-  </section>
+  <section class="content"></section>
   <div class="about" id="About">
-    <img src="misc/company_profile.jpg"  alt="sairam"style=" width: auto ;
-    max-width: 100% ;
-    height: auto ;"/>Company Profile
-   </div>
+    <img
+      src="misc/company_profile.jpg"
+      alt="sairam"
+      style="width: auto; height: auto ;text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    "
+    />Company Profile
+  </div>
   <div class="director" id="Director">
-    <img src="misc/director_profile.jpg" alt="sairam" style=" width: auto ;
-    max-width: 100% ;
-    height: auto ;"/>
-    Director Profile </div>
+    <img
+      src="misc/director_profile.jpg"
+      alt="sairam"
+      style="width: auto; max-width: 100%; height: auto  ;display: block;
+      margin-left: auto;
+      margin-right: auto;
+  "
+    />
+    Director Profile
+  </div>
   <div class="wat" id="What">
-    <img src="misc/what_we_do.jpg" alt="sairam"style=" width: auto ;
-    max-width: 100% ;
-    height: auto ;"/>What we do
-    
-    </div>
+    <img
+      src="misc/what_we_do.jpg"
+      alt="sairam"
+      style="width: auto; max-width: 100%; height: auto; display: block;
+      margin-left: auto;
+      margin-right: auto;
+  "
+    />What we do
+  </div>
   <!-- <div class="workss" id="Works">
     <img src="Sairam.jpeg" alt="sairam"/>
     Our Works </div> -->
   <div class="contacts" id="Contact">
-    <img src="misc/sairaam.jpg" alt="sairam"style=" width: auto ;
-    max-width: 100% ;
-    height: auto ;"/>
-    Contact Us </div>
+    <img
+      src="misc/sairaam.jpg"
+      alt="sairam"
+      style="width: auto; max-width: 100%; height: auto ;display: block;
+      margin-left: auto;
+      margin-right: auto;
+  "
+    />
+    Contact Us
+  </div>
 </body>
